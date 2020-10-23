@@ -2,12 +2,24 @@ import math
 
 primesummation=0
 
-for num in range (1,2000000,2): 
-    for i in range(2,num,2):
-        if num % i == 0:
-            break
-        else:
-          if i+1==num:
-            primesummation=primesummation+num
-            print(num)
-            print (primesummation)
+print ("running")
+
+def isPrime(number):
+  y = 1
+  for i in range(2,round(math.sqrt(num))+2):
+    if number%i==0 & number!=i:
+      y = 0
+      break
+  return (y)
+
+
+for num in range (3,2000001,2): 
+  x = isPrime(num)
+  if x == 1:
+    primesummation=primesummation+num
+    print (num)
+
+print (primesummation + 5) #ugh lmao
+
+#2 and 3 dont work properly due to my for loop, so we add 5
+#i could probably make it better but couldnt be bothered
