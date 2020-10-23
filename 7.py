@@ -1,11 +1,21 @@
-primenumc=1
+stop = 0
+primeCounter = 0
+number = 1
+print('running')
 
-for num in range (0,10000000000): 
-  for i in range(2,num):  
-    if num % i == 0:
+def isPrime(num):
+  y = 'prime'
+  for i in range(2,num):
+    if (num % i) == 0:
+      y = 'not prime'
       break
-    else:
-      if i+1==num:
-        primenumc=primenumc+1
-        print(primenumc)
-        print(num)
+  return (y)
+
+while stop == 0:
+  number += 1
+  x = isPrime(number)
+  if x == "prime":
+    primeCounter += 1
+  if primeCounter >= 10001:
+    stop = 1
+    print (primeCounter, number)
