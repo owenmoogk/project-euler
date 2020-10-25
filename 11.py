@@ -44,10 +44,13 @@ rows = [
 
 highest=0 #highest is of all rows
 
-def multiply_list(mlist):
-    total = 1
-    for i in mlist:
-        total = total * i
+def largestCombo4(list):
+    total = 1       #initialize variables
+    for i in list:
+        for item in range (0,len)
+
+
+        total = num1
     return total
 
 def list_check(r):

@@ -1,8 +1,19 @@
+finaln=0
+for n in range (1,100000):
+  for i in range (1,n):
+    finaln=finaln+i
+    if i==n-1:
 
-for i in range (0,1000):
-    counter=i-1
-    if counter>0:
-        triangularnum=i+counter
-    else:
-        print (triangularnum)
-        continue
+      x=finaln
+      y=(x**.5)
+      factorcounter=0
+
+      for i in range (1,y+1):
+        if x%i==0:
+          if i==x/i:
+            factorcounter=factorcounter+1
+          else:
+            factorcounter=factorcounter+2
+      if factorcounter>500:
+        print (factorcounter)
+        print (finaln)
