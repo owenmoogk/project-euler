@@ -1,4 +1,4 @@
-# Project Euler
+# project-euler
 
 All my files for Project Euler. https://projecteuler.net/
 
